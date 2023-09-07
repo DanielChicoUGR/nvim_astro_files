@@ -8,5 +8,13 @@ return {
   --   config = function()
   --     require("lsp_signature").setup()
   --   end,
-  -- },
+  -- TODO: Tus muertos
+  {
+   "folke/todo-comments.nvim",
+    dependencies = {"nvim-lua/plenary.nvim"},
+    -- Configuración por defecto
+    opts = {},
+    event = "User Astrofile",
+    cmd = {"TodoQuickFix"},
+  },
 }
